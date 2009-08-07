@@ -62,7 +62,7 @@ class UserExport extends SpecialPage {
         $db = wfGetDB( DB_MASTER );
         $users = $db->select('user', array('user_name', 'user_email'));
         
-        fputcsv($file, array('name', 'email'));
+        fputcsv($file, array('login', 'email'));
 
         while ( $user = $db->fetchObject( $users ) ) {
             fputcsv($file, array($user->user_name, $user->user_email));
