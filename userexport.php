@@ -23,10 +23,10 @@ $wgAvailableRights[] = 'userexport';
 $wgGroupPermissions['bureaucrat']['userexport'] = true;
 
 $dir = dirname(__FILE__) . '/';
-$wgAutoloadClasses['UserExport'] = $dir . 'UserExport_body.php';
+$wgAutoloadClasses['UserExport'] = $dir . 'userexport.body.php';
 
-$wgExtensionMessagesFiles['UserExport'] = $dir . 'UserExport.i18n.php';
-$wgExtensionAliasesFiles['UserExport'] = $dir . 'UserExport.alias.php';
+$wgExtensionMessagesFiles['UserExport'] = $dir . 'userexport.i18n.php';
+$wgExtensionAliasesFiles['UserExport'] = $dir . 'userexport.alias.php';
 $wgSpecialPages['UserExport'] = 'UserExport';
 $wgSpecialPageGroups['UserExport'] = 'users';
 
